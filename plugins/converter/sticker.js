@@ -1,6 +1,6 @@
 exports.run = {
    usage: ['sticker'],
-   hidden: ['s', 'sk', 'stiker', 'sgif'],
+   hidden: ['s', 'sk', 'stiker', 'sgif', 'stiker, 'stikel'],
    use: 'reply media',
    category: 'converter',
    async: async (m, {
@@ -42,7 +42,7 @@ exports.run = {
                   packname: exif.sk_pack,
                   author: exif.sk_author
                })
-            } else client.reply(m.chat, Func.texted('bold', `Stress ??`), m)
+            } else client.reply(m.chat, Func.texted('bold', `Kirik media dengan caption #sticker`), m)
          }
       } catch (e) {
          console.log(e)
